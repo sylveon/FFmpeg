@@ -60,6 +60,9 @@ const enum AVPixelFormat ff_amf_pix_fmts[] = {
 #if CONFIG_DXVA2
     AV_PIX_FMT_DXVA2_VLD,
 #endif
+    AV_PIX_FMT_BGRA,
+    AV_PIX_FMT_RGBA,
+    AV_PIX_FMT_ARGB,
     AV_PIX_FMT_NONE
 };
 

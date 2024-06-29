@@ -251,7 +251,7 @@ static int amf_init_context(AVCodecContext *avctx)
         AVHWFramesContext *frames_ctx = (AVHWFramesContext*)avctx->hw_frames_ctx->data;
 
         if (amf_av_to_amf_format(frames_ctx->sw_format) == AMF_SURFACE_UNKNOWN) {
-            av_log(avctx, AV_LOG_ERROR, "Format of input frames context (%s) is not supported by AMF.\n",
+            av_log(avctx, AV_LOG_ERROR, "Bruh moment: Format of input frames context (%s) is not supported by AMF.\n",
                    av_get_pix_fmt_name(frames_ctx->sw_format));
             return AVERROR(EINVAL);
         }
